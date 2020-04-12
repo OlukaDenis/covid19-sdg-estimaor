@@ -1,5 +1,3 @@
-'use-strict';
-
 const currentlyInfected = (reportedCases, severity = '') => {
   if (severity === 'severe') {
     return reportedCases * 50;
@@ -27,20 +25,23 @@ const duration = (periodType, period) => {
 };
 
 const severeCasesByRequestedTime = (requestedTimeInfections) => {
-  Math.floor(0.25 * requestedTimeInfections);
+  const severeCases = (0.25 * requestedTimeInfections);
+  return Math.floor(severeCases);
 };
 
 const hospitalBedsByRequestedTime = (totalHospitalBeds, requestedTimeSevereCases) => {
   const bedsAvailable = totalHospitalBeds * 0.35;
-  return bedsAvailable - requestedTimeSevereCases;
+  return Math.floor(bedsAvailable - requestedTimeSevereCases);
 };
 
 const casesForICUByRequestedTime = (requestedTimeInfections) => {
-  Math.floor(0.05 * requestedTimeInfections);
+  const icuCases = 0.05 * requestedTimeInfections;
+  return Math.floor(icuCases);
 };
 
 const casesForVentilatorsByRequestedTime = (requestedTimeInfections) => {
-  Math.floor(0.02 * requestedTimeInfections);
+  const ventilatorCases = 0.02 * requestedTimeInfections;
+  return Math.floor(ventilatorCases);
 };
 
 const dollarsInFlight = (requestedTimeInfections, avgDailyIncome, avgPopulationIncome, days) => {

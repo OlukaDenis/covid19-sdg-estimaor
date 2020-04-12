@@ -13,4 +13,3 @@ const Data = (region, periodType, timeToElapse, reportedCases, population, total
 };
 
 module.exports = Data;
-console.log(Data);

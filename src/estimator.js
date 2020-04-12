@@ -1,11 +1,9 @@
+const impactCalculation = require('./impactCalculation');
+
 const covid19ImpactEstimator = (data) => {
-  const output = {
-    data,
-    impact: {},
-    severeImpact: {}
-  };
-  return output;
+  const impact = impactCalculation(data);
+  const severeImpact = impactCalculation(data, 'severe');
+  return { data, impact, severeImpact };
 };
 
 module.exports = covid19ImpactEstimator;
-
