@@ -25,7 +25,7 @@ const duration = (periodType, period) => {
 };
 
 const severeCasesByRequestedTime = (requestedTimeInfections) => {
-  const severeCases = (0.25 * requestedTimeInfections);
+  const severeCases = (0.15 * requestedTimeInfections);
   return Math.floor(severeCases);
 };
 
