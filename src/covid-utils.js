@@ -36,7 +36,7 @@ const hospitalBedsByRequestedTime = (totalHospitalBeds, requestedTimeSevereCases
 
 const casesForICUByRequestedTime = (requestedTimeInfections) => {
   const icuCases = 0.05 * requestedTimeInfections;
-  return Math.floor(icuCases);
+  return Math.ceil(icuCases);
 };
 
 const casesForVentilatorsByRequestedTime = (requestedTimeInfections) => {
