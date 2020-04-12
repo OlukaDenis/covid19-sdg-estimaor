@@ -1,3 +1,11 @@
-const covid19ImpactEstimator = (data) => data;
+const covid19ImpactEstimator = (data) => {
+  const output = {
+    data,
+    impact: {},
+    severeImpact: {}
+  };
+  return output;
+};
 
-export default covid19ImpactEstimator;
+module.exports = covid19ImpactEstimator;
+
