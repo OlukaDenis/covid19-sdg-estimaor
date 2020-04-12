@@ -40,12 +40,12 @@ const casesForICUByRequestedTime = (requestedTimeInfections) => {
 };
 
 const casesForVentilatorsByRequestedTime = (requestedTimeInfections) => {
-  const ventilatorCases = 0.02 * requestedTimeInfections;
+  const ventilatorCases = (0.02 * requestedTimeInfections);
   return Math.floor(ventilatorCases);
 };
 
 const dollarsInFlight = (requestedTimeInfections, avgDailyIncome, avgPopulationIncome, days) => {
-  const moneyLost = requestedTimeInfections * avgPopulationIncome * avgDailyIncome * days;
+  const moneyLost = (requestedTimeInfections * avgPopulationIncome * avgDailyIncome) / days;
   return Math.floor(moneyLost);
 };
 
