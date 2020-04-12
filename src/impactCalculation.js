@@ -7,14 +7,14 @@ const calculateImpact = (data, severity = '') => {
 
   const requestedInfections = utils.infectionsByRequestedTime(days, infectedCurrently);
 
-  const severeCasesByRequestTime = utils.severeCasesByRequestedTime(requestedInfections);
+  const severeCases = utils.severeCasesByRequestedTime(requestedInfections);
 
-  const hospitalBedsByRequestedTime = utils.hospitalBedsByRequestedTime(data.totalHospitalBeds,
-    severeCasesByRequestTime);
+  const hospitalBeds = utils.hospitalBedsByRequestedTime(data.totalHospitalBeds,
+    severeCases);
 
-  const casesForICUByRequestedTime = utils.casesForICUByRequestedTime(requestedInfections);
+  const icuCases = utils.casesForICUByRequestedTime(requestedInfections);
 
-  const casesForVentilatorsByRequestedTime = utils.casesForVentilatorsByRequestedTime(
+  const ventilatorCases = utils.casesForVentilatorsByRequestedTime(
     requestedInfections
   );
 
@@ -28,9 +28,10 @@ const calculateImpact = (data, severity = '') => {
   const output = {
     currentlyInfected: infectedCurrently,
     infectionsByRequestedTime: requestedInfections,
-    hospitalBeds: hospitalBedsByRequestedTime,
-    icuCases: casesForICUByRequestedTime,
-    ventilatorCases: casesForVentilatorsByRequestedTime,
+    hospitalBedsByRequestedTime: hospitalBeds,
+    severeCasesByRequestedTime: severeCases,
+    casesForICUByRequestedTime: icuCases,
+    casesForVentilatorsByRequestedTime: ventilatorCases,
     dollarsInFlight: moneyLost
   };
 
