@@ -37,7 +37,8 @@ input[type=number], select {
 .third-row{
   width: 92%;
 }
-input[type=submit] {
+
+button {
   background-color: #4CAF50;
   color: white;
   padding: 14px 20px;
@@ -49,7 +50,7 @@ input[type=submit] {
   width: 40%;
 }
 
-input[type=submit]:hover {
+button {
   background-color: #45a049;
 }
 
