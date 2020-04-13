@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="title" content="Covid-19 Estimator">
+  <meta name="description" content="An app to estimate the impact of Covid-19 virus">
+  <title>Covid-19 Estimator</title>
+  <link rel="stylesheet" href="css/index.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container card">
+    <div class="title">
+      <h1>Data Collection Form</h1>
+    </div>
+    <form action="" method="" >
+      <div class="first-row">
+        <div class="form-group">
+          <label for="population">Population</label>
+          <input type="number" id="population" name="population" placeholder="Population" data-population>
+        </div>
+        <div class="form-group">
+          <label for="timeToElapse">Time to Elapse</label>
+          <input type="number" id="timeToElapse" name="timeToElapse" placeholder="Time to Elapse" data-time-to-elapse>
+        </div>
+      </div>
+
+      <div class="second-row">
+        <div class="form-group">
+          <label for="reportedCases">Reported Cases</label>
+          <input type="number" id="reportedCases" name="reportedCases" placeholder="Reported Cases" data-reported-cases>
+        </div>
+
+        <div class="form-group">
+          <label for="totalHospitalBeds">Total Hospital Beds</label>
+          <input type="number" id="totalHospitalBeds" name="totalHospitalBeds" placeholder="Total Hospital Beds" data-total-hospital-beds>
+        </div>
+      </div>
+
+      <div class="third-row">
+        <div class="form-group">
+          <label for="periodType">Period Type</label>
+          <select id="periodType" name="periodType" data-period-type>
+            <option value="days">Days</option>
+            <option value="Weeks">Weeks</option>
+            <option value="months">Months</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group btn-submit">
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+  </div>
+</body>
+</html>
