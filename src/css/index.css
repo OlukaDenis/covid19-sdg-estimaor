@@ -3,8 +3,9 @@ body {
 }
 
 .container {
-  max-width: 800px;
+  width: 800px;
   margin: 50px auto;
+  font-size: 16px;
 }
 
 .first-row, .second-row, .third-row{
@@ -16,6 +17,10 @@ body {
   text-align: center;
   border-bottom: 1px solid #eee;
   margin-bottom: 2.5rem;
+}
+
+label {
+  font-size: 18px;
 }
 
 .form-group {
@@ -32,6 +37,7 @@ input[type=number], select {
   border-radius: 4px;
   background-color: #fff;
   box-sizing: border-box;
+  font-size: 16px;
 }
 
 .third-row{
@@ -41,6 +47,7 @@ input[type=submit] {
   background-color: #4CAF50;
   color: white;
   padding: 14px 20px;
+  font-size: 16px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
