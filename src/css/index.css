@@ -1,6 +1,6 @@
-/* body {
-  font-family: 'Lato', sans-serif;
-} */
+body {
+  background-color: white;
+}
 
 .container {
   width: 70%;
@@ -15,12 +15,14 @@
 
 .title {
   text-align: center;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #efefef;
   margin-bottom: 2.5rem;
+  color: black;
 }
 
 label {
   font-size: 18px;
+  color: #0A0A0A;
 }
 
 .form-group {
@@ -33,9 +35,9 @@ input[type=number], select {
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
-  border: 1px solid #ccc;
+  border: 1px solid #efefef;
+  background-color: white;
   border-radius: 4px;
-  background-color: #fff;
   box-sizing: border-box;
   font-size: 16px;
 }
@@ -45,7 +47,7 @@ input[type=number], select {
 }
 
 input[type=submit] {
-  background-color: #3885e9;
+  background-color: #1356AA;
   color: white;
   padding: 14px 20px;
   font-size: 16px;
@@ -58,12 +60,12 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: #367dda;
+  background-color: #1A579E;
 }
 
 .card {
   padding: 20px;
-  border: 1px solid #eee;
+  border: 1px solid #efefef;
   border-radius: 5px;
   transition: 0.3s;
 }
