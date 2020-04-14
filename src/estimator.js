@@ -1,4 +1,4 @@
-const impactCalculation = require('./impactCalculation');
+const impactCalculation = require('./lib/impactCalculation');
 
 const covid19ImpactEstimator = (data) => {
   const impact = impactCalculation(data);
