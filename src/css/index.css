@@ -46,7 +46,7 @@ input[type=number], select {
   width: 92%;
 }
 
-input[type=submit] {
+button {
   background-color: #1356AA;
   color: white;
   padding: 14px 20px;
@@ -59,7 +59,7 @@ input[type=submit] {
   width: 40%;
 }
 
-input[type=submit]:hover {
+button:hover {
   background-color: #1A579E;
 }
 
